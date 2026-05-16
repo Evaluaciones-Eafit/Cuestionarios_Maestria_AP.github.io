@@ -65,110 +65,111 @@
 
 <div class="quiz-container">
     <div class="icon">🌿 🌱 🌵</div>
-    <h1>Plant Phenotyping: Past, Present, and Future</h1>
+    <h1>Making AI Less “Thirsty”</h1>
     <form id="quizForm">
-        
-        <!-- Pregunta 1 -->
-        <div class="question">
-            <p>1. ¿Cómo se define el fenotipo de una planta?</p>
-            <div class="options">
-                <label><input type="radio" name="q1" value="0"> Solo por su carga genética.</label>
-                <label><input type="radio" name="q1" value="1"> Por la interacción dinámica con el ambiente a lo largo de su vida.</label>
-                <label><input type="radio" name="q1" value="0"> Como una característica estática que no cambia.</label>
-            </div>
-        </div>
 
-        <!-- Pregunta 2 -->
-        <div class="question">
-            <p>2. ¿Qué es el "efecto memoria" en los fenotipos?</p>
-            <div class="options">
-                <label><input type="radio" name="q2" value="1"> Las experiencias previas influyen en la respuesta futura de la planta.</label>
-                <label><input type="radio" name="q2" value="0"> La capacidad de la planta para almacenar agua.</label>
-                <label><input type="radio" name="q2" value="0"> Un proceso de clonación natural.</label>
+        <form id="aiQuiz">
+            <!-- P1 -->
+            <div class="question-block">
+                <span class="question-text">1. ¿Cuánta agua dulce se evapora directamente al entrenar el modelo GPT-3 en los centros de datos de Microsoft en EE. UU.?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q1" value="0"> 10,000 litros.</label></li>
+                    <label><input type="radio" name="q1" value="1"> 700,000 litros.</label></li>
+                    <label><input type="radio" name="q1" value="0"> 5.4 millones de litros.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 3 -->
-        <div class="question">
-            <p>3. ¿Cuál es un desafío del análisis cuantitativo en plantas?</p>
-            <div class="options">
-                <label><input type="radio" name="q3" value="1"> La gran plasticidad y diversidad de diseños entre especies.</label>
-                <label><input type="radio" name="q3" value="0"> Que las plantas no tienen variabilidad.</label>
-                <label><input type="radio" name="q3" value="0"> La falta de herramientas informáticas.</label>
+            <!-- P2 -->
+            <div class="question-block">
+                <span class="question-text">2. ¿A qué se compara la proyección de extracción de agua de la IA global para el año 2027?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q2" value="1"> A 4 – 6 veces el consumo anual de Dinamarca.</label></li>
+                    <label><input type="radio" name="q2" value="0"> Al consumo total de la Unión Europea.</label></li>
+                    <label><input type="radio" name="q2" value="0"> A la capacidad de la presa Hoover.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 4 -->
-        <div class="question">
-            <p>4. ¿Qué tecnología impulsó los sistemas de imagen en los 90?</p>
-            <div class="options">
-                <label><input type="radio" name="q4" value="0"> Los drones de vapor.</label>
-                <label><input type="radio" name="q4" value="1"> Dispositivos de carga acoplada (CCD) y CMOS.</label>
-                <label><input type="radio" name="q4" value="0"> La radiodifusión analógica.</label>
+            <!-- P3 -->
+            <div class="question-block">
+                <span class="question-text">3. ¿Cuál es la definición técnica de "consumo de agua" según la lectura?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q3" value="0"> Toda el agua extraída de una fuente natural.</label></li>
+                    <label><input type="radio" name="q3" value="1"> Extracción menos descarga (agua evaporada o incorporada).</label></li>
+                    <label><input type="radio" name="q3" value="0"> El agua que beben los empleados del centro de datos.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 5 -->
-        <div class="question">
-            <p>5. ¿Cuál es una técnica no invasiva de alta resolución?</p>
-            <div class="options">
-                <label><input type="radio" name="q5" value="1"> Imágenes de Resonancia Magnética (MRI) y PET.</label>
-                <label><input type="radio" name="q5" value="0"> Poda destructiva de hojas.</label>
-                <label><input type="radio" name="q5" value="0"> Pesaje manual en balanza de cocina.</label>
+            <!-- P4 -->
+            <div class="question-block">
+                <span class="question-text">4. ¿Cuánta agua "bebe" GPT-3 para ofrecer una conversación de entre 10 y 50 respuestas?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q4" value="0"> Un barril de 20 litros.</label></li>
+                    <label><input type="radio" name="q4" value="0"> Una gota de agua destilada.</label></li>
+                    <label><input type="radio" name="q4" value="1"> Una botella de 500 ml.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 6 -->
-        <div class="question">
-            <p>6. ¿Qué significan las siglas del principio FAIR?</p>
-            <div class="options">
-                <label><input type="radio" name="q6" value="1"> Localizable, Disponible, Identificable y Reutilizable.</label>
-                <label><input type="radio" name="q6" value="0"> Rápido, Preciso, Integrado y Robusto.</label>
-                <label><input type="radio" name="q6" value="0"> Gratuito, Accesible e Internacional.</label>
+            <!-- P5 -->
+            <div class="question-block">
+                <span class="question-text">5. ¿Qué representa el "Alcance 2" (Scope-2) de la huella hídrica?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q5" value="0"> El agua usada para fabricar los chips de IA.</label></li>
+                    <label><input type="radio" name="q5" value="1"> El agua usada fuera del sitio para generar electricidad.</label></li>
+                    <label><input type="radio" name="q5" value="0"> El agua evaporada en las torres de enfriamiento locales.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 7 -->
-        <div class="question">
-            <p>7. ¿Qué recomendación estandariza los metadatos?</p>
-            <div class="options">
-                <label><input type="radio" name="q7" value="1"> MIAPPE (Minimal Information about Plant Phenotyping Experiments).</label>
-                <label><input type="radio" name="q7" value="0"> El código de ética de Mendel.</label>
-                <label><input type="radio" name="q7" value="0"> El protocolo de Kyoto vegetal.</label>
+            <!-- P6 -->
+            <div class="question-block">
+                <span class="question-text">6. ¿Por qué se requiere agua dulce limpia (potable) en las torres de enfriamiento?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q6" value="1"> Para evitar obstrucciones en tuberías y crecimiento bacteriano.</label></li>
+                    <label><input type="radio" name="q6" value="0"> Porque el agua salada atrae rayos que dañan los servidores.</label></li>
+                    <label><input type="radio" name="q6" value="0"> Para asegurar que el vapor sea apto para la lluvia artificial.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 8 -->
-        <div class="question">
-            <p>8. ¿Cuál es el objetivo de la red IPPN?</p>
-            <div class="options">
-                <label><input type="radio" name="q8" value="1"> Promover la fenotipificación y la interacción academia-industria.</label>
-                <label><input type="radio" name="q8" value="0"> Vender semillas modificadas.</label>
-                <label><input type="radio" name="q8" value="0"> Prohibir el uso de drones.</label>
+            <!-- P7 -->
+            <div class="question-block">
+                <span class="question-text">7. ¿Qué sucede con la Eficiencia del Uso del Agua (WUE) cuando la temperatura exterior aumenta?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q7" value="0"> La WUE mejora porque se requiere menos enfriamiento activo.</label></li>
+                    <label><input type="radio" name="q7" value="1"> La WUE empeora significativamente debido a la alta evaporación.</label></li>
+                    <label><input type="radio" name="q7" value="0"> Se mantiene estática gracias a los sistemas de aislamiento.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 9 -->
-        <div class="question">
-            <p>9. ¿Cuál es un pilar de la infraestructura EMPHASIS?</p>
-            <div class="options">
-                <label><input type="radio" name="q9" value="1"> El modelado para probar combinaciones de alelos.</label>
-                <label><input type="radio" name="q9" value="0"> La excavación manual de túneles.</label>
-                <label><input type="radio" name="q9" value="0"> La publicidad en redes sociales.</label>
+            <!-- P8 -->
+            <div class="question-block">
+                <span class="question-text">8. ¿Qué significa la recomendación "Unfollow the Sun" (No seguir al sol)?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q8" value="0"> Usar solo energía nuclear durante la noche.</label></li>
+                    <label><input type="radio" name="q8" value="1"> Evitar horas de alta temperatura para reducir la evaporación de agua.</label></li>
+                    <label><input type="radio" name="q8" value="0"> Entrenar modelos de IA solo en el hemisferio sur.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <!-- Pregunta 10 -->
-        <div class="question">
-            <p>10. ¿Por qué la fenotipificación fue la única opción antigua?</p>
-            <div class="options">
-                <label><input type="radio" name="q10" value="1"> Porque los principios de la genética se descubrieron recientemente.</label>
-                <label><input type="radio" name="q10" value="0"> Porque las plantas no tenían genes en la antigüedad.</label>
-                <label><input type="radio" name="q10" value="0"> Porque no existía el agua de riego.</label>
+            <!-- P9 -->
+            <div class="question-block">
+                <span class="question-text">9. ¿Qué porcentaje de la extracción de agua suele consumirse (evaporarse) en torres de enfriamiento de buena calidad?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q9" value="1"> Aproximadamente el 80%.</label></li>
+                    <label><input type="radio" name="q9" value="0"> Solo el 15%.</label></li>
+                    <label><input type="radio" name="q9" value="0"> El 100% en todos los casos.</label></li>
+                </ul>
             </div>
-        </div>
 
-        <button type="button" onclick="showResults()">Finalizar Cuestionario 🌻</button>
+            <!-- P10 -->
+            <div class="question-block">
+                <span class="question-text">10. ¿Por qué optimizar únicamente la huella de carbono puede ser un problema?</span>
+                <ul class="options">
+                    <label><input type="radio" name="q10" value="0"> Porque el agua es más barata que el carbono.</label></li>
+                    <label><input type="radio" name="q10" value="1"> Porque minimizar carbono puede empeorar la eficiencia hídrica.</label></li>
+                    <label><input type="radio" name="q10" value="0"> Porque la IA no consume carbono, solo electricidad.</label></li>
+                </ul>
+            </div>
+
+            <button type="button" onclick="showResults()">Finalizar Cuestionario 🌻</button>
     </form>
 
     <div id="result" class="correct"></div>
