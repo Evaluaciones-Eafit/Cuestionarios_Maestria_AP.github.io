@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Repaso Python</title>
+    <style>
+        body {
+            background-color: #e8f5e9; /* Verde claro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2e7d32;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { text-align: center; color: #1b5e20; }
+        .plant-icon { width: 30px; vertical-align: middle; }
+        .question { margin-bottom: 20px; border-bottom: 1px solid #c8e6c9; padding-bottom: 10px; }
+        .options label { display: block; cursor: pointer; padding: 5px; border-radius: 5px; }
+        .options label:hover { background-color: #f1f8e9; }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover { background-color: #388e3c; }
+        #resultado {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            display: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>
+        🌱 Repaso de Python 🌿
+    </h1>
+    <p>Responde a las siguientes preguntas basadas en el material de repaso.</p>
+
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p><strong>1. ¿Qué se entiende por lenguaje interpretado?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> A) El código debe ser transformado a lenguaje máquina por un compilador.</label>
+                <label><input type="radio" name="q1" value="1"> B) El código es ejecutado línea por línea directamente por un programa intérprete.</label>
+                <label><input type="radio" name="q1" value="0"> C) Es un lenguaje que solo puede ser leído por humanos.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p><strong>2. ¿Qué se entiende por código de alto nivel?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> A) Un lenguaje que utiliza únicamente código binario.</label>
+                <label><input type="radio" name="q2" value="1"> B) Un lenguaje diseñado para ser fácil de leer y escribir por humanos.</label>
+                <label><input type="radio" name="q2" value="0"> C) Un código que solo se ejecuta en supercomputadoras.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p><strong>3. ¿Qué se debe tener presente para imprimir un texto en Python?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="0"> A) Se debe utilizar el comando write seguido de corchetes.</label>
+                <label><input type="radio" name="q3" value="1"> B) Se debe utilizar la función print() y encerrar el texto entre comillas.</label>
+                <label><input type="radio" name="q3" value="0"> C) No es necesario usar paréntesis.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p><strong>4. ¿Cómo se puede imprimir un texto que incluya comillas?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="1"> A) Alternando el uso de comillas o utilizando el carácter de escape \.</label>
+                <label><input type="radio" name="q4" value="0"> B) Python no permite el uso de comillas dentro de una cadena.</label>
+                <label><input type="radio" name="q4" value="0"> C) Es obligatorio reiniciar la variable.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p><strong>5. ¿Qué se debe tener en cuenta para nombrar una variable?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="0"> A) Puede comenzar con un número y tener espacios.</label>
+                <label><input type="radio" name="q5" value="1"> B) Debe comenzar con letra o guion bajo, sin espacios y es sensible a mayúsculas.</label>
+                <label><input type="radio" name="q5" value="0"> C) Siempre debe terminar con punto y coma.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p><strong>6. ¿Qué comando se usa para conocer el tipo de dato?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="0"> A) El comando check_data().</label>
+                <label><input type="radio" name="q6" value="1"> B) La función incorporada type().</label>
+                <label><input type="radio" name="q6" value="0"> C) El comando what_is().</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p><strong>7. ¿Qué sucede con la división por cero en Python?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="0"> A) El resultado es automáticamente infinito.</label>
+                <label><input type="radio" name="q7" value="0"> B) El programa ignora la operación y asigna cero.</label>
+                <label><input type="radio" name="q7" value="1"> C) Lanza una excepción de tipo ZeroDivisionError.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p><strong>8. ¿Cómo opera el condicional if?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="0"> A) Permite repetir una instrucción varias veces.</label>
+                <label><input type="radio" name="q8" value="1"> B) Ejecuta un bloque de código solo si la condición es verdadera.</label>
+                <label><input type="radio" name="q8" value="0"> C) Se utiliza únicamente para finalizar el programa.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p><strong>9. ¿Cómo opera el condicional else?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="0"> A) Verifica una segunda condición si la primera fue verdadera.</label>
+                <label><input type="radio" name="q9" value="1"> B) Se ejecuta automáticamente cuando la condición del if es falsa.</label>
+                <label><input type="radio" name="q9" value="0"> C) Es un bucle que se repite hasta ingresar un dato.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p><strong>10. ¿Cómo opera el condicional elif?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="1"> A) Evalúa múltiples condiciones adicionales secuencialmente.</label>
+                <label><input type="radio" name="q10" value="0"> B) Es una función para borrar variables.</label>
+                <label><input type="radio" name="q10" value="0"> C) Es obligatorio ponerlo después de cada else.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <p><strong>11. ¿Cuál es un método para trabajar con strings?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="1"> A) upper() para mayúsculas o strip() para espacios.</label>
+                <label><input type="radio" name="q11" value="0"> B) append(), que añade elementos al final.</label>
+                <label><input type="radio" name="q11" value="0"> C) sqrt(), que calcula la raíz cuadrada.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <p><strong>12. ¿Qué es "list comprehension" en Python?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="0"> A) Un método para comprimir archivos .zip.</label>
+                <label><input type="radio" name="q12" value="1"> B) Sintaxis concisa para crear listas a partir de iterables.</label>
+                <label><input type="radio" name="q12" value="0"> C) Herramienta para traducir listas a otros lenguajes.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question">
+            <p><strong>13. ¿Cómo se definen correctamente: lista, tupla y conjunto?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="1"> A) Lista: [1, 2], Tupla: (1, 2), Conjunto: {1, 2}.</label>
+                <label><input type="radio" name="q13" value="0"> B) Lista: {1, 2}, Tupla:[1, 2] Conjunto: (1, 2).</label>
+                <label><input type="radio" name="q13" value="0"> C) Todas se definen igual.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question">
+            <p><strong>14. ¿Qué se entiende por el bucle For?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="0"> A) Un condicional que se ejecuta si la variable es "For".</label>
+                <label><input type="radio" name="q14" value="1"> B) Estructura que permite iterar sobre los elementos de una secuencia.</label>
+                <label><input type="radio" name="q14" value="0"> C) Se usa exclusivamente para números aleatorios.</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="calcularResultado()">Verificar Resultados 🌵</button>
+    </form>
+
+    <div id="resultado"></div>
+</div>
+
+<script>
+    function calcularResultado() {
+        const form = document.getElementById('quizForm');
+        let puntaje = 0;
+        const total = 14;
+        
+        const formData = new FormData(form);
+        for (let value of formData.values()) {
+            puntaje += parseInt(value);
+        }
+
+        const divResultado = document.getElementById('resultado');
+        divResultado.style.display = 'block';
+        divResultado.innerHTML = `Tu puntaje es: ${puntaje} / ${total} 🌿`;
+        
+        if (puntaje === total) {
+            divResultado.style.backgroundColor = '#c8e6c9';
+            divResultado.style.color = '#1b5e20';
+        } else {
+            divResultado.style.backgroundColor = '#fff9c4';
+            divResultado.style.color = '#f57f17';
+        }
+    }
+</script>
+
+</body>
+</html>

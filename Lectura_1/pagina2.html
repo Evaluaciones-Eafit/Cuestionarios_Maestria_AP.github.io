@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario: Fenotipificación de Plantas</title>
+    <style>
+        body {
+            background-color: #f1f8e9; /* Verde muy claro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1b5e20;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .quiz-container {
+            background-color: #ffffff;
+            max-width: 700px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 2px solid #c8e6c9;
+        }
+        h1 { text-align: center; color: #2e7d32; }
+        .icon { text-align: center; font-size: 2rem; margin-bottom: 10px; }
+        .question { margin-bottom: 25px; }
+        .question p { font-weight: bold; margin-bottom: 10px; }
+        .options label {
+            display: block;
+            background: #f9fbe7;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .options label:hover { background: #dcedc8; }
+        input[type="radio"] { margin-right: 10px; }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #388e3c; }
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            font-size: 1.2rem;
+        }
+        .correct { background-color: #c8e6c9; color: #1b5e20; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <div class="icon">🌿 🌱 🌵</div>
+    <h1>Plant Phenotyping: Past, Present, and Future</h1>
+    <form id="quizForm">
+        
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cómo se define el fenotipo de una planta?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> Solo por su carga genética.</label>
+                <label><input type="radio" name="q1" value="1"> Por la interacción dinámica con el ambiente a lo largo de su vida.</label>
+                <label><input type="radio" name="q1" value="0"> Como una característica estática que no cambia.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿Qué es el "efecto memoria" en los fenotipos?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="1"> Las experiencias previas influyen en la respuesta futura de la planta.</label>
+                <label><input type="radio" name="q2" value="0"> La capacidad de la planta para almacenar agua.</label>
+                <label><input type="radio" name="q2" value="0"> Un proceso de clonación natural.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Cuál es un desafío del análisis cuantitativo en plantas?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="1"> La gran plasticidad y diversidad de diseños entre especies.</label>
+                <label><input type="radio" name="q3" value="0"> Que las plantas no tienen variabilidad.</label>
+                <label><input type="radio" name="q3" value="0"> La falta de herramientas informáticas.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Qué tecnología impulsó los sistemas de imagen en los 90?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="0"> Los drones de vapor.</label>
+                <label><input type="radio" name="q4" value="1"> Dispositivos de carga acoplada (CCD) y CMOS.</label>
+                <label><input type="radio" name="q4" value="0"> La radiodifusión analógica.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿Cuál es una técnica no invasiva de alta resolución?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="1"> Imágenes de Resonancia Magnética (MRI) y PET.</label>
+                <label><input type="radio" name="q5" value="0"> Poda destructiva de hojas.</label>
+                <label><input type="radio" name="q5" value="0"> Pesaje manual en balanza de cocina.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. ¿Qué significan las siglas del principio FAIR?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="1"> Localizable, Disponible, Identificable y Reutilizable.</label>
+                <label><input type="radio" name="q6" value="0"> Rápido, Preciso, Integrado y Robusto.</label>
+                <label><input type="radio" name="q6" value="0"> Gratuito, Accesible e Internacional.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. ¿Qué recomendación estandariza los metadatos?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="1"> MIAPPE (Minimal Information about Plant Phenotyping Experiments).</label>
+                <label><input type="radio" name="q7" value="0"> El código de ética de Mendel.</label>
+                <label><input type="radio" name="q7" value="0"> El protocolo de Kyoto vegetal.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. ¿Cuál es el objetivo de la red IPPN?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="1"> Promover la fenotipificación y la interacción academia-industria.</label>
+                <label><input type="radio" name="q8" value="0"> Vender semillas modificadas.</label>
+                <label><input type="radio" name="q8" value="0"> Prohibir el uso de drones.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p>9. ¿Cuál es un pilar de la infraestructura EMPHASIS?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="1"> El modelado para probar combinaciones de alelos.</label>
+                <label><input type="radio" name="q9" value="0"> La excavación manual de túneles.</label>
+                <label><input type="radio" name="q9" value="0"> La publicidad en redes sociales.</label>
+            </div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. ¿Por qué la fenotipificación fue la única opción antigua?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="1"> Porque los principios de la genética se descubrieron recientemente.</label>
+                <label><input type="radio" name="q10" value="0"> Porque las plantas no tenían genes en la antigüedad.</label>
+                <label><input type="radio" name="q10" value="0"> Porque no existía el agua de riego.</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="showResults()">Finalizar Cuestionario 🌻</button>
+    </form>
+
+    <div id="result" class="correct"></div>
+</div>
+
+<script>
+    function showResults() {
+        const form = document.getElementById('quizForm');
+        let score = 0;
+        const total = 10;
+        const formData = new FormData(form);
+
+        for (let value of formData.values()) {
+            score += parseInt(value);
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `<h3>Has obtenido ${score} de ${total} puntos correctos.</h3>` + 
+                             (score > 7 ? "¡Excelente conocimiento botánico! 🌿" : "Sigue estudiando las fuentes para mejorar. 🌱");
+        
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+</body>
+</html>
