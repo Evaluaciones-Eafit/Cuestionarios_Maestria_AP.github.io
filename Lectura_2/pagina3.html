@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario de Digitalización Agrícola</title>
+    <style>
+        body {
+            background-color: #e8f5e9; /* Verde claro */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #2e7d32;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 { text-align: center; color: #1b5e20; }
+        .question { margin-bottom: 20px; border-bottom: 1px solid #c8e6c9; padding-bottom: 10px; }
+        .options { list-style: none; padding: 0; }
+        .options li { margin: 10px 0; }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover { background-color: #388e3c; }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Huella de Digitalización Agrícola</h1>
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cuál fue el tamaño total de datos acumulados en 2020 para el campo de 22 ha?</p>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="0"> A) 1.1 GB</li>
+                <li><input type="radio" name="q1" value="1"> B) 18.6 GB</li>
+                <li><input type="radio" name="q1" value="0"> C) 40.5 GB</li>
+            </ul>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿Qué tecnología causó el aumento masivo de datos a partir de 2017?</p>
+            <ul class="options">
+                <li><input type="radio" name="q2" value="0"> A) Satélites Sentinel-2</li>
+                <li><input type="radio" name="q2" value="1"> B) Imágenes de drones</li>
+                <li><input type="radio" name="q2" value="0"> C) Estaciones meteorológicas</li>
+            </ul>
+        </div>
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Qué tamaño de datos se predice para el año 2025 en el estudio?</p>
+            <ul class="options">
+                <li><input type="radio" name="q3" value="0"> A) 25.0 GB</li>
+                <li><input type="radio" name="q3" value="0"> B) 35.5 GB</li>
+                <li><input type="radio" name="q3" value="1"> C) 40.5 GB</li>
+            </ul>
+        </div>
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Cómo se denomina a la actual revolución digital en agricultura?</p>
+            <ul class="options">
+                <li><input type="radio" name="q4" value="1"> A) Agricultura 4.0</li>
+                <li><input type="radio" name="q4" value="0"> B) Revolución Verde</li>
+                <li><input type="radio" name="q4" value="0"> C) Mecanización 2.0</li>
+            </ul>
+        </div>
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿Qué sensor de suelo proporcionó más de 3000 puntos de muestreo en el campo?</p>
+            <ul class="options">
+                <li><input type="radio" name="q5" value="1"> A) ARP (Perfilado de Resistividad)</li>
+                <li><input type="radio" name="q5" value="0"> B) Sensor de humedad capacitivo</li>
+                <li><input type="radio" name="q5" value="0"> C) Termómetro de suelo</li>
+            </ul>
+        </div>
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. ¿Qué software gratuito ocupó unos 1500 MB en disco desde 2017?</p>
+            <ul class="options">
+                <li><input type="radio" name="q6" value="0"> A) FarmWorks</li>
+                <li><input type="radio" name="q6" value="1"> B) QGIS</li>
+                <li><input type="radio" name="q6" value="0"> C) JD link</li>
+            </ul>
+        </div>
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. ¿Cuál fue el incremento en el rendimiento del maíz gracias a estas tecnologías?</p>
+            <ul class="options">
+                <li><input type="radio" name="q7" value="0"> A) 10%</li>
+                <li><input type="radio" name="q7" value="1"> B) 31%</li>
+                <li><input type="radio" name="q7" value="0"> C) 50%</li>
+            </ul>
+        </div>
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. ¿Cuál es el GWP estimado para los 18,500 MB acumulados en 2020?</p>
+            <ul class="options">
+                <li><input type="radio" name="q8" value="1"> A) 0.157 kg CO2 eq.</li>
+                <li><input type="radio" name="q8" value="0"> B) 1.570 kg CO2 eq.</li>
+                <li><input type="radio" name="q8" value="0"> C) 0.019 kg CO2 eq.</li>
+            </ul>
+        </div>
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p>9. ¿En qué país se realizó el estudio de caso de 15 años?</p>
+            <ul class="options">
+                <li><input type="radio" name="q9" value="0"> A) Alemania</li>
+                <li><input type="radio" name="q9" value="1"> B) Italia</li>
+                <li><input type="radio" name="q9" value="0"> C) Estados Unidos</li>
+            </ul>
+        </div>
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. ¿Qué reducción en el nitrógeno aplicado se logró según el estudio?</p>
+            <ul class="options">
+                <li><input type="radio" name="q10" value="0"> A) 5%</li>
+                <li><input type="radio" name="q10" value="0"> B) 15%</li>
+                <li><input type="radio" name="q10" value="1"> C) 23%</li>
+            </ul>
+        </div>
+
+        <button type="button" onclick="showResults()">Finalizar Cuestionario 🌻</button>
+    </form>
+
+    <div id="result" class="correct"></div>
+</div>
+
+<script>
+    function showResults() {
+        const form = document.getElementById('quizForm');
+        let score = 0;
+        const total = 10;
+        const formData = new FormData(form);
+
+        for (let value of formData.values()) {
+            score += parseInt(value);
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `<h3>Has obtenido ${score} de ${total} puntos correctos.</h3>` + 
+                             (score > 7 ? "¡Excelente conocimiento botánico! 🌿" : "Sigue estudiando las fuentes para mejorar. 🌱");
+        
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+</body>
+</html>
