@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario sobre la Librería Pandas</title>
+    <style>
+        body {
+            background-color: #e8f5e9; /* Verde muy claro */
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2e7d32;
+            text-align: center;
+        }
+        .pregunta {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #81c784;
+            background-color: #f1f8e9; /* Verde claro para las preguntas */
+        }
+        .opcion {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cuestionario de Pandas</h1>
+    <form id="quizForm">
+        
+        <!-- Pregunta 1 -->
+        <div class="pregunta">
+            <p>1. ¿Quién es el desarrollador principal detrás de la creación de Pandas?</p>
+            <label class="opcion"><input type="radio" name="p1" value="0"> A. Guido van Rossum</label>
+            <label class="opcion"><input type="radio" name="p1" value="1"> B. Wes McKinney</label>
+            <label class="opcion"><input type="radio" name="p1" value="0"> C. David Robinson</label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="pregunta">
+            <p>2. ¿De qué término econométrico deriva el nombre "Pandas"?</p>
+            <label class="opcion"><input type="radio" name="p2" value="1"> A. Panel Data</label>
+            <label class="opcion"><input type="radio" name="p2" value="0"> B. Python Analysis</label>
+            <label class="opcion"><input type="radio" name="p2" value="0"> C. Partitial Datasets</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="pregunta">
+            <p>3. ¿Qué estructura de datos de Pandas tiene una sola dimensión?</p>
+            <label class="opcion"><input type="radio" name="p3" value="1"> A. Series</label>
+            <label class="opcion"><input type="radio" name="p3" value="0"> B. DataFrame</label>
+            <label class="opcion"><input type="radio" name="p3" value="0"> C. Panel</label>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="pregunta">
+            <p>4. ¿Cuál es la estructura de datos bidimensional (tablas) en Pandas?</p>
+            <label class="opcion"><input type="radio" name="p4" value="0"> A. Series</label>
+            <label class="opcion"><input type="radio" name="p4" value="1"> B. DataFrame</label>
+            <label class="opcion"><input type="radio" name="p4" value="0"> C. Cube</label>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="pregunta">
+            <p>5. ¿Bajo qué librería principal de Python está construida Pandas?</p>
+            <label class="opcion"><input type="radio" name="p5" value="0"> A. Matplotlib</label>
+            <label class="opcion"><input type="radio" name="p5" value="1"> B. NumPy</label>
+            <label class="opcion"><input type="radio" name="p5" value="0"> C. Scikit-learn</label>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="pregunta">
+            <p>6. ¿Qué comando se utiliza para leer datos desde un archivo de texto separado por comas?</p>
+            <label class="opcion"><input type="radio" name="p6" value="1"> A. read_csv()</label>
+            <label class="opcion"><input type="radio" name="p6" value="0"> B. open_csv()</label>
+            <label class="opcion"><input type="radio" name="p6" value="0"> C. load_txt()</label>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="pregunta">
+            <p>7. ¿Qué atributo devuelve una tupla con el número de filas y columnas de un DataFrame?</p>
+            <label class="opcion"><input type="radio" name="p7" value="0"> A. size</label>
+            <label class="opcion"><input type="radio" name="p7" value="1"> B. shape</label>
+            <label class="opcion"><input type="radio" name="p7" value="0"> C. info()</label>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="pregunta">
+            <p>8. El operador que permite la indexación orientada puramente a etiquetas es:</p>
+            <label class="opcion"><input type="radio" name="p8" value="1"> A. .loc</label>
+            <label class="opcion"><input type="radio" name="p8" value="0"> B. .iloc</label>
+            <label class="opcion"><input type="radio" name="p8" value="0"> C. .idx</label>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="pregunta">
+            <p>9. ¿Qué operador se utiliza para la indexación basada exclusivamente en números enteros?</p>
+            <label class="opcion"><input type="radio" name="p9" value="0"> A. .loc</label>
+            <label class="opcion"><input type="radio" name="p9" value="1"> B. .iloc</label>
+            <label class="opcion"><input type="radio" name="p9" value="0"> C. .at</label>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="pregunta">
+            <p>10. ¿Qué método permite convertir un DataFrame de formato ancho a formato largo?</p>
+            <label class="opcion"><input type="radio" name="p10" value="0"> A. pivot()</label>
+            <label class="opcion"><input type="radio" name="p10" value="1"> B. melt()</label>
+            <label class="opcion"><input type="radio" name="p10" value="0"> C. stack()</label>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="pregunta">
+            <p>11. ¿Cuál es el atributo para obtener los tipos de datos de las columnas de un DataFrame?</p>
+            <label class="opcion"><input type="radio" name="p11" value="1"> A. dtypes</label>
+            <label class="opcion"><input type="radio" name="p11" value="0"> B. types</label>
+            <label class="opcion"><input type="radio" name="p11" value="0"> C. info()</label>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="pregunta">
+            <p>12. ¿Qué instrucción se usa para borrar una columna específica de un DataFrame?</p>
+            <label class="opcion"><input type="radio" name="p12" value="0"> A. remove</label>
+            <label class="opcion"><input type="radio" name="p12" value="1"> B. del</label>
+            <label class="opcion"><input type="radio" name="p12" value="0"> C. erase</label>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="pregunta">
+            <p>13. ¿Qué método devuelve un resumen descriptivo (media, min, max, etc.) de una Serie o DataFrame?</p>
+            <label class="opcion"><input type="radio" name="p13" value="0"> A. summary()</label>
+            <label class="opcion"><input type="radio" name="p13" value="1"> B. describe()</label>
+            <label class="opcion"><input type="radio" name="p13" value="0"> C. stats()</label>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="pregunta">
+            <p>14. ¿Cómo se eliminan los valores nulos o desconocidos (NaN) de una Serie?</p>
+            <label class="opcion"><input type="radio" name="p14" value="0"> A. clear()</label>
+            <label class="opcion"><input type="radio" name="p14" value="1"> B. dropna()</label>
+            <label class="opcion"><input type="radio" name="p14" value="0"> C. remove_null()</label>
+        </div>
+
+        <button type="button" onclick="evaluarQuiz()">Verificar Resultados</button>
+    </form>
+    
+    <div id="resultado"></div>
+</div>
+
+<script>
+    function evaluarQuiz() {
+        let puntaje = 0;
+        const total = 14;
+        const formulario = document.getElementById('quizForm');
+        const data = new FormData(formulario);
+
+        for (let entry of data.entries()) {
+            puntaje += parseInt(entry[1]);
+        }
+
+        document.getElementById('resultado').innerText = 
+            "Has acertado " + puntaje + " de " + total + " preguntas.";
+    }
+</script>
+
+</body>
+</html>
